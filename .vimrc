@@ -30,7 +30,7 @@ call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'Valloric/YouCompleteMe'
+Plugin 'Xuyuanp/nerdtree-git-plugin'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
-
