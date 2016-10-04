@@ -19,6 +19,12 @@ hi Directory ctermfg=LightGreen
 hi CursorLine ctermbg=None ctermfg=Yellow
 au VimEnter *  NERDTree
 
+if has('persistent_undo')
+    set undodir=$HOME/.vim/undo
+    set undolevels=10000
+    set undofile
+endif
+
 match Error /\%101v.\+/
 execute pathogen#infect()
 
