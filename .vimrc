@@ -8,7 +8,6 @@ set shiftwidth=4
 set tabstop=4
 set expandtab
 set ignorecase smartcase
-autocmd BufWinEnter * NERDTreeMirror
 hi TabLineSel ctermfg=White ctermbg=DarkRed
 hi TabLine ctermfg=White ctermbg=DarkGreen
 hi TabLineFill ctermfg=White ctermbg=DarkGreen
@@ -17,7 +16,6 @@ hi StatusLine ctermfg=White ctermbg=DarkGreen
 hi StatusLineFill ctermfg=White ctermbg=DarkGreen
 hi Directory ctermfg=LightGreen
 hi CursorLine ctermbg=None ctermfg=Yellow
-au VimEnter *  NERDTree
 
 if has('persistent_undo')
     set undodir=$HOME/.vim/undo
@@ -36,7 +34,6 @@ call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'Valloric/YouCompleteMe'
-Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'scrooloose/syntastic'
 
 call vundle#end()            " required
