@@ -7,6 +7,11 @@ set shiftwidth=4
 set tabstop=4
 set expandtab
 set ignorecase smartcase
+
+set formatoptions-=r
+set formatoptions-=c
+set formatoptions-=o
+
 hi TabLineSel ctermfg=White ctermbg=DarkRed
 hi TabLine ctermfg=White ctermbg=DarkGreen
 hi TabLineFill ctermfg=White ctermbg=DarkGreen
