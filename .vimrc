@@ -1,3 +1,10 @@
+set nocompatible
+
+" Plugins live in ~/.vim/bundle and are loaded by pathogen.
+" Vundle.vim is not used.
+let g:pathogen_disabled = ['Vundle.vim']
+execute pathogen#infect()
+
 set background=dark
 colors koehler
 syntax on
@@ -7,6 +14,11 @@ set shiftwidth=4
 set tabstop=4
 set expandtab
 set ignorecase smartcase
+set incsearch
+set wildmenu
+set backspace=indent,eol,start
+" Esc takes effect at once (pairs with escape-time in tmux.conf).
+set ttimeout ttimeoutlen=50
 
 set formatoptions-=r
 set formatoptions-=c
@@ -28,18 +40,3 @@ if has('persistent_undo')
 endif
 
 match Error /\%101v.\+/
-execute pathogen#infect()
-
-set nocompatible        
-filetype off           
-
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-
-Plugin 'VundleVim/Vundle.vim'
-Plugin 'Valloric/YouCompleteMe'
-Plugin 'scrooloose/syntastic'
-
-call vundle#end()            " required
-filetype plugin indent on    " required
-

@@ -1,6 +1,8 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =4
-let g:netrw_dirhist_1='/home/bcrom/.vim/colors'
-let g:netrw_dirhist_2='/home/bcrom/fds4fab/.git'
-let g:netrw_dirhist_3='/etc/wpa_supplicant'
-let g:netrw_dirhist_4='/home/bcrom/output'
+let g:netrw_dirhistcnt =6
+let g:netrw_dirhist_6='/home/bcrom/.local/lib/python3.8/site-packages/recordlinkage/datasets/febrl'
+let g:netrw_dirhist_5='/home/bcrom/.ipython/profile_default'
+let g:netrw_dirhist_4='/home/bcrom/.screenlayout'
+let g:netrw_dirhist_3='/home/bcrom/GoogleDrive/scripts'
+let g:netrw_dirhist_2='/usr/share/X11/xkb/symbols'
+let g:netrw_dirhist_1='/home/bcrom/.vim/bundle/Vundle.vim'
